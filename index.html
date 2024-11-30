@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanSmart - Educação Financeira</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <h1><a href="#home">FinanSmart</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#videos">Vídeos</a></li>
+                    <li><a href="#calculadoras">Calculadoras</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#forum">Fórum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Controle suas finanças e alcance seus sonhos</h2>
+            <p>Educação financeira descomplicada com guias, vídeos e ferramentas interativas.</p>
+            <a href="#artigos" class="cta-button">Aprender Agora</a>
+        </div>
+    </section>
+
+    <!-- Artigos -->
+    <section id="artigos" class="section">
+        <h2>Artigos Recentes</h2>
+        <div class="articles">
+            <article>
+                <h3><a href="#artigo1">Como criar um orçamento eficiente</a></h3>
+                <p>Aprenda a organizar sua renda e cortar despesas desnecessárias.</p>
+                <a href="#artigo1" class="read-more">Leia mais</a>
+            </article>
+            <article>
+                <h3><a href="#artigo2">Investindo para iniciantes</a></h3>
+                <p>Os primeiros passos para começar a investir de forma segura e prática.</p>
+                <a href="#artigo2" class="read-more">Leia mais</a>
+            </article>
+            <article>
+                <h3><a href="#artigo3">Dicas para sair das dívidas</a></h3>
+                <p>Estratégias comprovadas para quitar dívidas rapidamente e evitar juros altos.</p>
+                <a href="#artigo3" class="read-more">Leia mais</a>
+            </article>
+        </div>
+
+        <!-- Artigo Completo -->
+        <div id="artigo1" class="article-full">
+            <h2>Como criar um orçamento eficiente</h2>
+            <p>Organizar suas finanças pessoais pode parecer assustador no início, mas é essencial para evitar dívidas e alcançar seus objetivos financeiros. Aqui está um guia simples:</p>
+            <ul>
+                <li>Liste sua renda mensal total.</li>
+                <li>Identifique todas as despesas fixas (ex.: aluguel, contas).</li>
+                <li>Defina uma porcentagem da renda para economias/investimentos.</li>
+                <li>Reduza ou elimine gastos desnecessários.</li>
+                <li>Revise seu orçamento mensalmente e ajuste conforme necessário.</li>
+            </ul>
+        </div>
+
+        <div id="artigo2" class="article-full">
+            <h2>Investindo para iniciantes</h2>
+            <p>Começar a investir pode ser simples e acessível, mesmo com pouco dinheiro. Considere estas dicas:</p>
+            <ul>
+                <li>Defina seus objetivos financeiros de curto e longo prazo.</li>
+                <li>Entenda seu perfil de investidor: conservador, moderado ou arrojado.</li>
+                <li>Comece com produtos simples, como Tesouro Direto ou fundos de índice (ETFs).</li>
+                <li>Evite "dicas quentes" e prefira decisões baseadas em análise.</li>
+                <li>Invista regularmente, mesmo que seja um valor pequeno.</li>
+            </ul>
+        </div>
+
+        <div id="artigo3" class="article-full">
+            <h2>Dicas para sair das dívidas</h2>
+            <p>Se você está endividado, saiba que é possível sair dessa situação com planejamento e disciplina. Aqui estão algumas dicas:</p>
+            <ul>
+                <li>Faça uma lista de todas as dívidas, com valores e taxas de juros.</li>
+                <li>Priorize as dívidas com juros mais altos.</li>
+                <li>Considere renegociar prazos e taxas com credores.</li>
+                <li>Evite contrair novas dívidas enquanto quita as existentes.</li>
+                <li>Crie um fundo de emergência para evitar novas crises.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Vídeos -->
+    <section id="videos" class="section">
+        <h2>Vídeos Educativos</h2>
+        <div class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Dicas para economizar dinheiro" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ktjafK4SgWM" title="O básico de investimentos" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Calculadoras -->
+    <section id="calculadoras" class="section">
+        <h2>Calculadoras</h2>
+        <div class="tools">
+            <button onclick="openCalculator('budget')">Planejador de Orçamento</button>
+            <button onclick="openCalculator('investment')">Simulador de Investimentos</button>
+        </div>
+        <div id="calculator-output"></div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+        <h2>Perguntas Frequentes</h2>
+        <details>
+            <summary>Como criar um fundo de emergência?</summary>
+            <p>Reserve 10% da sua renda mensal até acumular 6 meses de despesas fixas.</p>
+        </details>
+        <details>
+            <summary>Qual é o melhor investimento para iniciantes?</summary>
+            <p>Considere produtos de baixo risco, como Tesouro Direto ou ETFs.</p>
+        </details>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FinanSmart. Todos os direitos reservados.</p>
+            <a href="#home">Voltar ao topo</a>
+        </div>
+    </footer>
+</body>
+</html>
